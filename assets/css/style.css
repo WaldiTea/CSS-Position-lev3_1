@@ -1,0 +1,169 @@
+/*
+########################################
+                  Global
+########################################
+*/
+@import url("https://fonts.googleapis.com/css2?family=Monoton&family=Ubuntu&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background: #070707;
+  height: 100vh;
+  font-family: "Ubuntu";
+  font-size: 1rem;
+}
+
+div {
+  color: #9d9f9f;
+  font-family: "Monoton";
+  font-size: 2.5rem;
+}
+
+h1 {
+  color: #f4f7f8;
+  font-size: 6em;
+}
+
+p {
+  color: #ac8059;
+  font-size: 1em;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #9d9f9f;
+  text-transform: uppercase;
+  font-size: 1em;
+}
+
+a:hover {
+  color: #f4f7f8;
+}
+
+/*
+########################################
+                  Header
+########################################
+*/
+
+header {
+  border-bottom: 2px solid #9d9f9f;
+  position: relative;
+}
+
+header div,
+header article,
+header nav,
+header nav ul li {
+  display: inline-block;
+}
+
+header div {
+  text-align: center;
+  padding: 0 4rem;
+}
+
+header article {
+  position: absolute;
+  top: 18px;
+}
+
+header nav {
+  position: absolute;
+  top: 23px;
+  right: 14rem;
+}
+
+header nav ul li:nth-last-of-type(1n + 2) {
+  padding-right: 9rem;
+}
+
+/*
+########################################
+                  Main
+########################################
+*/
+
+main {
+  position: relative;
+}
+
+main article {
+  position: absolute;
+  top: 20rem;
+  left: 17rem;
+}
+
+main article h1 {
+  width: 50%;
+}
+
+main article p {
+  text-transform: uppercase;
+  margin-top: 1rem;
+}
+
+main div {
+  display: inline-block;
+  width: 15vw;
+  height: 75vh;
+  position: absolute;
+  top: 4rem;
+}
+
+main div:nth-of-type(1) {
+  background: url(../img/Bild1.jpeg) 75% 100% / cover no-repeat;
+  right: 21rem;
+}
+
+main div:nth-of-type(2) {
+  background: url(../img/Bild2.jpeg) 28% 100% / cover no-repeat;
+  right: 42rem;
+}
+
+main div:nth-of-type(3) {
+  background: url(../img/Bild3.jpeg) 35% 100% / cover no-repeat;
+  right: 0;
+}
+
+/*
+########################################
+                  Footer
+########################################
+*/
+
+footer article {
+  position: absolute;
+  bottom: 50px;
+}
+
+footer article:nth-of-type(1) {
+  left: 4rem;
+}
+
+footer article:nth-of-type(1) a {
+  font-size: 1.5em;
+  padding-left: 1.5rem;
+}
+
+footer article:nth-of-type(2) {
+  right: 4rem;
+  bottom: 60px;
+}
+
+footer article:nth-of-type(2) span {
+  border: 2px solid #ac8059;
+  border-radius: 50%;
+  padding: 0.8rem 1rem;
+  margin: 0 1.5rem;
+}
